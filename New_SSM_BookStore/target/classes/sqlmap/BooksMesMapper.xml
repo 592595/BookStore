@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pan.mapper.BooksMesMapper">
+    <resultMap id="BaseResultMap" type="com.pan.model.BooksMes">
+        <id column="id_book" property="idBook" jdbcType="VARCHAR"/>
+        <result column="id_seller" property="idSeller" jdbcType="VARCHAR"/>
+        <result column="name_book" property="nameBook" jdbcType="VARCHAR"/>
+        <result column="price_book" property="priceBook" jdbcType="DOUBLE"/>
+        <result column="press_book" property="pressBook" jdbcType="VARCHAR"/>
+        <result column="time_book" property="timeBook" jdbcType="TIMESTAMP"/>
+        <result column="sum_book" property="sumBook" jdbcType="INTEGER"/>
+        <result column="type_book" property="typeBook" jdbcType="VARCHAR"/>
+        <result column="illegal_book" property="illegalBook" jdbcType="CHAR"/>
+        <result column="bookimg_url" property="bookimgUrl" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id_book, id_seller, name_book, price_book, press_book, time_book, sum_book, type_book, 
+    illegal_book, bookimg_url
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"/>
+        from books_mes
+        where id_book = #{idBook,jdbcType=VARCHAR}
+    </select>
+    <select id="selectsellerbooks" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"/>
+        from books_mes
+        where id_seller = #{idSeller,jdbcType=VARCHAR}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from books_mes
+    where id_book = #{idBook,jdbcType=VARCHAR}
+  </delete>
+    <insert id="insert" parameterType="com.pan.model.BooksMes">
+    insert into books_mes (id_book, id_seller, name_book, 
+      price_book, press_book, time_book, 
+      sum_book, type_book, illegal_book, 
+      bookimg_url)
+    values (#{idBook,jdbcType=VARCHAR}, #{idSeller,jdbcType=VARCHAR}, #{nameBook,jdbcType=VARCHAR}, 
+      #{priceBook,jdbcType=DOUBLE}, #{pressBook,jdbcType=VARCHAR}, #{timeBook,jdbcType=TIMESTAMP}, 
+      #{sumBook,jdbcType=INTEGER}, #{typeBook,jdbcType=VARCHAR}, #{illegalBook,jdbcType=CHAR}, 
+      #{bookimgUrl,jdbcType=VARCHAR})
+  </insert>
+    <insert id="insertSelective" parameterType="com.pan.model.BooksMes">
+        insert into books_mes
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="idBook != null">
+                id_book,
+            </if>
+            <if test="idSeller != null">
+                id_seller,
+            </if>
+            <if test="nameBook != null">
+                name_book,
+            </if>
+            <if test="priceBook != null">
+                price_book,
+            </if>
+            <if test="pressBook != null">
+                press_book,
+            </if>
+            <if test="timeBook != null">
+                time_book,
+            </if>
+            <if test="sumBook != null">
+                sum_book,
+            </if>
+            <if test="typeBook != null">
+                type_book,
+            </if>
+            <if test="illegalBook != null">
+                illegal_book,
+            </if>
+            <if test="bookimgUrl != null">
+                bookimg_url,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="idBook != null">
+                #{idBook,jdbcType=VARCHAR},
+            </if>
+            <if test="idSeller != null">
+                #{idSeller,jdbcType=VARCHAR},
+            </if>
+            <if test="nameBook != null">
+                #{nameBook,jdbcType=VARCHAR},
+            </if>
+            <if test="priceBook != null">
+                #{priceBook,jdbcType=DOUBLE},
+            </if>
+            <if test="pressBook != null">
+                #{pressBook,jdbcType=VARCHAR},
+            </if>
+            <if test="timeBook != null">
+                #{timeBook,jdbcType=TIMESTAMP},
+            </if>
+            <if test="sumBook != null">
+                #{sumBook,jdbcType=INTEGER},
+            </if>
+            <if test="typeBook != null">
+                #{typeBook,jdbcType=VARCHAR},
+            </if>
+            <if test="illegalBook != null">
+                #{illegalBook,jdbcType=CHAR},
+            </if>
+            <if test="bookimgUrl != null">
+                #{bookimgUrl,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.pan.model.BooksMes">
+        update books_mes
+        <set>
+            <if test="idSeller != null">
+                id_seller = #{idSeller,jdbcType=VARCHAR},
+            </if>
+            <if test="nameBook != null">
+                name_book = #{nameBook,jdbcType=VARCHAR},
+            </if>
+            <if test="priceBook != null">
+                price_book = #{priceBook,jdbcType=DOUBLE},
+            </if>
+            <if test="pressBook != null">
+                press_book = #{pressBook,jdbcType=VARCHAR},
+            </if>
+            <if test="timeBook != null">
+                time_book = #{timeBook,jdbcType=TIMESTAMP},
+            </if>
+            <if test="sumBook != null">
+                sum_book = #{sumBook,jdbcType=INTEGER},
+            </if>
+            <if test="typeBook != null">
+                type_book = #{typeBook,jdbcType=VARCHAR},
+            </if>
+            <if test="illegalBook != null">
+                illegal_book = #{illegalBook,jdbcType=CHAR},
+            </if>
+            <if test="bookimgUrl != null">
+                bookimg_url = #{bookimgUrl,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id_book = #{idBook,jdbcType=VARCHAR}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.pan.model.BooksMes">
+    update books_mes
+    set id_seller = #{idSeller,jdbcType=VARCHAR},
+      name_book = #{nameBook,jdbcType=VARCHAR},
+      price_book = #{priceBook,jdbcType=DOUBLE},
+      press_book = #{pressBook,jdbcType=VARCHAR},
+      time_book = #{timeBook,jdbcType=TIMESTAMP},
+      sum_book = #{sumBook,jdbcType=INTEGER},
+      type_book = #{typeBook,jdbcType=VARCHAR},
+      illegal_book = #{illegalBook,jdbcType=CHAR},
+      bookimg_url = #{bookimgUrl,jdbcType=VARCHAR}
+    where id_book = #{idBook,jdbcType=VARCHAR}
+  </update>
+
+    <select id="selectAllBooks" resultMap="BaseResultMap">
+		select * from books_mes where illegal_book='0'
+	</select>
+    <update id="updateBooks" parameterType="string">
+        update books_mes
+        set  illegal_book = '1'
+        where id_book = #{bookID}
+    </update>
+    <select id="selectViolationBooks" resultMap="BaseResultMap">
+		select * from books_mes where illegal_book='1'
+	</select>
+    <update id="updateBookCancel" parameterType="string">
+        update books_mes
+        set  illegal_book = '0'
+        where id_book = #{bookID}
+    </update>
+
+</mapper>

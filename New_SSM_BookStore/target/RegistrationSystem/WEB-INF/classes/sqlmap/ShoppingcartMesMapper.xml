@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pan.mapper.ShoppingcartMesMapper" >
+  <resultMap id="BaseResultMap" type="com.pan.model.ShoppingcartMes" >
+    <id column="id_buyer" property="idBuyer" jdbcType="VARCHAR" />
+    <result column="id_book" property="idBook" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id_buyer, id_book
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from shoppingcart_mes
+    where id_buyer = #{idBuyer,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from shoppingcart_mes
+    where id_buyer = #{idBuyer,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.pan.model.ShoppingcartMes" >
+    insert into shoppingcart_mes (id_buyer, id_book)
+    values (#{idBuyer,jdbcType=VARCHAR}, #{idBook,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.pan.model.ShoppingcartMes" >
+    insert into shoppingcart_mes
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="idBuyer != null" >
+        id_buyer,
+      </if>
+      <if test="idBook != null" >
+        id_book,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="idBuyer != null" >
+        #{idBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="idBook != null" >
+        #{idBook,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pan.model.ShoppingcartMes" >
+    update shoppingcart_mes
+    <set >
+      <if test="idBook != null" >
+        id_book = #{idBook,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id_buyer = #{idBuyer,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pan.model.ShoppingcartMes" >
+    update shoppingcart_mes
+    set id_book = #{idBook,jdbcType=VARCHAR}
+    where id_buyer = #{idBuyer,jdbcType=VARCHAR}
+  </update>
+</mapper>

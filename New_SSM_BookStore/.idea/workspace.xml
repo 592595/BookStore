@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SSM_BookStore:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="efa26c51-e287-4700-b0b7-45d21584b93f" name="Default Changelist" comment="卖家查看订单">
+      <change afterPath="$PROJECT_DIR$/SSM_BookStore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pan/controller/BuyerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pan/controller/BuyerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pan/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pan/mapper/ShoppingcartMesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pan/mapper/ShoppingcartMesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pan/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pan/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pan/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pan/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pan/service/ShoworderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pan/service/ShoworderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pan/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pan/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmap/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmap/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/buyer/pages/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/buyer/pages/shop.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target" beforeDir="true" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="mybatis-cfg" />
+        <option value="Jsp File" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\74415\.m2\repository" />
+        <option name="mavenHome" value="E:/Program Files/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="E:\Program Files\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="12" />
+  </component>
+  <component name="ProjectId" id="1SftTDP02ns6W53oLFK8I300Qns" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575378170631" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/buyer/pages" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.14160156" />
+    <property name="project.structure.side.proportion" value="0.113895215" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\WebCode\SVN\4\New_SSM_BookStore\src\main\webapp\WEB-INF\pages\seller" />
+      <recent name="E:\code\WebCode\SVN\New_SSM_BookStore\src\main\webapp\WEB-INF\pages\admin\pages" />
+      <recent name="E:\code\WebCode\SVN\New_SSM_BookStore\src\main\webapp" />
+      <recent name="E:\code\WebCode\SVN\New_SSM_BookStore\src\main\webapp\WEB-INF\pages\admin" />
+      <recent name="E:\code\WebCode\SVN\SSM_BookStore\src\main\webapp\WEB-INF\pages" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.pan.service.Impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\WebCode\SVN\4\New_SSM_BookStore\src\main\webapp\WEB-INF\pages\buyer\pages" />
+      <recent name="E:\code\WebCode\SVN\4\New_SSM_BookStore\src\main\java\com\pan\controller" />
+      <recent name="E:\code\WebCode\SVN\4\New_SSM_BookStore\src\main\java\com\pan\model" />
+      <recent name="E:\code\WebCode\SVN\4\New_SSM_BookStore\src\main\java\com\pan\service\Impl" />
+      <recent name="E:\code\WebCode\SVN\4\New_SSM_BookStore\src\main\resources\sqlmap" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pan.controller" />
+      <recent name="com.pan.service.Impl" />
+      <recent name="com.pan.service" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.pan.service.Impl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.24">
+    <configuration name="test.TestSpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SSM_BookStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pan.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pan.test" />
+      <option name="MAIN_CLASS_NAME" value="com.pan.test.test" />
+      <option name="METHOD_NAME" value="TestSpring" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SSM_BookStore [mybatis-generator:generate...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="C:\Users\74415\.m2\repository" />
+            <option name="mavenHome" value="E:/Program Files/apache-maven-3.6.1" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="threads" />
+            <option name="updateIndicesOnProjectOpen" value="true" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="E:\Program Files\apache-maven-3.6.1\conf\settings.xml" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+                <option value="-e" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.24" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.24" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="12" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SSM_BookStore:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SSM_BookStore" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56093" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SSM_BookStore:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.test.TestSpring" />
+      <item itemvalue="Maven.SSM_BookStore [mybatis-generator:generate...]" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.24" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test.TestSpring" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4463a323" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\74415\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\code\WebCode\SVN\4\New_SSM_BookStore" />
+          <option name="myCopyRoot" value="E:\code\WebCode\SVN\4\New_SSM_BookStore" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\code\WebCode\SVN\4\New_SSM_BookStore" />
+          <option name="myCopyRoot" value="E:\code\WebCode\SVN\4\New_SSM_BookStore" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efa26c51-e287-4700-b0b7-45d21584b93f" name="Default Changelist" comment="" />
+      <created>1571966483658</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571966483658</updated>
+      <workItem from="1571966486517" duration="4434000" />
+      <workItem from="1571992940799" duration="1504000" />
+      <workItem from="1571994485369" duration="2101000" />
+      <workItem from="1572073124012" duration="6912000" />
+      <workItem from="1572080086970" duration="2336000" />
+      <workItem from="1574131286388" duration="2579000" />
+      <workItem from="1574134028786" duration="1895000" />
+      <workItem from="1574144319782" duration="7092000" />
+      <workItem from="1574236621800" duration="955000" />
+      <workItem from="1574326559229" duration="4130000" />
+      <workItem from="1574341868960" duration="432000" />
+      <workItem from="1574343103996" duration="2719000" />
+      <workItem from="1574394035158" duration="4714000" />
+      <workItem from="1574399300699" duration="7736000" />
+      <workItem from="1574409928382" duration="174000" />
+      <workItem from="1574687769085" duration="2799000" />
+      <workItem from="1574743695481" duration="3017000" />
+      <workItem from="1574750473036" duration="2146000" />
+      <workItem from="1575368084694" duration="586000" />
+      <workItem from="1575377237912" duration="968000" />
+      <workItem from="1575378775545" duration="775000" />
+      <workItem from="1575888469475" duration="527000" />
+      <workItem from="1575951867142" duration="4483000" />
+      <workItem from="1575959879644" duration="3096000" />
+      <workItem from="1575963702041" duration="2541000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="卖家查看订单" />
+    <option name="LAST_COMMIT_MESSAGE" value="卖家查看订单" />
+  </component>
+</project>

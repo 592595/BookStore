@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pan.mapper.OrdersMesMapper" >
+  <resultMap id="BaseResultMap" type="com.pan.model.OrdersMes" >
+    <id column="id_order" property="idOrder" jdbcType="VARCHAR" />
+    <result column="id_buyer" property="idBuyer" jdbcType="VARCHAR" />
+    <result column="id_seller" property="idSeller" jdbcType="VARCHAR" />
+    <result column="name_book" property="nameBook" jdbcType="VARCHAR" />
+    <result column="sum_book" property="sumBook" jdbcType="INTEGER" />
+    <result column="price_book" property="priceBook" jdbcType="DOUBLE" />
+    <result column="price_order" property="priceOrder" jdbcType="DOUBLE" />
+    <result column="time_order" property="timeOrder" jdbcType="TIMESTAMP" />
+    <result column="address_buyer" property="addressBuyer" jdbcType="VARCHAR" />
+    <result column="deliver_check" property="deliverCheck" jdbcType="CHAR" />
+    <result column="pay_check" property="payCheck" jdbcType="CHAR" />
+    <result column="id_book" property="idBook" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id_order, id_buyer, id_seller, name_book, sum_book, price_book, price_order, time_order, 
+    address_buyer, deliver_check, pay_check, id_book
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from orders_mes
+    where id_seller = #{idSeller,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByPrimaryKeyL" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from orders_mes
+    where id_buyer = #{idBuyer,jdbcType=VARCHAR}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from orders_mes
+    where id_order = #{idOrder,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.pan.model.OrdersMes" >
+    insert into orders_mes (id_order, id_buyer, id_seller, 
+      name_book, sum_book, price_book, 
+      price_order, time_order, address_buyer, 
+      deliver_check, pay_check, id_book
+      )
+    values (#{idOrder,jdbcType=VARCHAR}, #{idBuyer,jdbcType=VARCHAR}, #{idSeller,jdbcType=VARCHAR}, 
+      #{nameBook,jdbcType=VARCHAR}, #{sumBook,jdbcType=INTEGER}, #{priceBook,jdbcType=DOUBLE}, 
+      #{priceOrder,jdbcType=DOUBLE}, #{timeOrder,jdbcType=TIMESTAMP}, #{addressBuyer,jdbcType=VARCHAR}, 
+      #{deliverCheck,jdbcType=CHAR}, #{payCheck,jdbcType=CHAR}, #{idBook,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.pan.model.OrdersMes" >
+    insert into orders_mes
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="idOrder != null" >
+        id_order,
+      </if>
+      <if test="idBuyer != null" >
+        id_buyer,
+      </if>
+      <if test="idSeller != null" >
+        id_seller,
+      </if>
+      <if test="nameBook != null" >
+        name_book,
+      </if>
+      <if test="sumBook != null" >
+        sum_book,
+      </if>
+      <if test="priceBook != null" >
+        price_book,
+      </if>
+      <if test="priceOrder != null" >
+        price_order,
+      </if>
+      <if test="timeOrder != null" >
+        time_order,
+      </if>
+      <if test="addressBuyer != null" >
+        address_buyer,
+      </if>
+      <if test="deliverCheck != null" >
+        deliver_check,
+      </if>
+      <if test="payCheck != null" >
+        pay_check,
+      </if>
+      <if test="idBook != null" >
+        id_book,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="idOrder != null" >
+        #{idOrder,jdbcType=VARCHAR},
+      </if>
+      <if test="idBuyer != null" >
+        #{idBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="idSeller != null" >
+        #{idSeller,jdbcType=VARCHAR},
+      </if>
+      <if test="nameBook != null" >
+        #{nameBook,jdbcType=VARCHAR},
+      </if>
+      <if test="sumBook != null" >
+        #{sumBook,jdbcType=INTEGER},
+      </if>
+      <if test="priceBook != null" >
+        #{priceBook,jdbcType=DOUBLE},
+      </if>
+      <if test="priceOrder != null" >
+        #{priceOrder,jdbcType=DOUBLE},
+      </if>
+      <if test="timeOrder != null" >
+        #{timeOrder,jdbcType=TIMESTAMP},
+      </if>
+      <if test="addressBuyer != null" >
+        #{addressBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="deliverCheck != null" >
+        #{deliverCheck,jdbcType=CHAR},
+      </if>
+      <if test="payCheck != null" >
+        #{payCheck,jdbcType=CHAR},
+      </if>
+      <if test="idBook != null" >
+        #{idBook,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pan.model.OrdersMes" >
+    update orders_mes
+    <set >
+      <if test="idBuyer != null" >
+        id_buyer = #{idBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="idSeller != null" >
+        id_seller = #{idSeller,jdbcType=VARCHAR},
+      </if>
+      <if test="nameBook != null" >
+        name_book = #{nameBook,jdbcType=VARCHAR},
+      </if>
+      <if test="sumBook != null" >
+        sum_book = #{sumBook,jdbcType=INTEGER},
+      </if>
+      <if test="priceBook != null" >
+        price_book = #{priceBook,jdbcType=DOUBLE},
+      </if>
+      <if test="priceOrder != null" >
+        price_order = #{priceOrder,jdbcType=DOUBLE},
+      </if>
+      <if test="timeOrder != null" >
+        time_order = #{timeOrder,jdbcType=TIMESTAMP},
+      </if>
+      <if test="addressBuyer != null" >
+        address_buyer = #{addressBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="deliverCheck != null" >
+        deliver_check = #{deliverCheck,jdbcType=CHAR},
+      </if>
+      <if test="payCheck != null" >
+        pay_check = #{payCheck,jdbcType=CHAR},
+      </if>
+      <if test="idBook != null" >
+        id_book = #{idBook,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id_order = #{idOrder,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pan.model.OrdersMes" >
+    update orders_mes
+    set
+      deliver_check = '是'
+    where id_book = #{bookID}
+  </update>
+</mapper>

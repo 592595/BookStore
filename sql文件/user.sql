@@ -1,0 +1,10 @@
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('1', '1', '1', '1', NULL, '0');
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('12345678912', '周希禹', '123', '内蒙古大学', NULL, '1');
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('12365478987', '王琦', '123', '内蒙古大学', NULL, '1');
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('12365498712', '庞野', '123', '内蒙古大学', NULL, '0');
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('15540947621', '刘家君', '1', '111', NULL, '0');
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('2', '2', '2', '2', NULL, '1');
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('3', '3', '3', '3', NULL, '3');
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('33', '33', '33', NULL, NULL, '0');
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('66', '66', '66', NULL, NULL, '0');
+INSERT INTO `user` (`phone`, `username`, `password`, `address_buyer`, `gender`, `type`) VALUES ('78945612312', '潘佳慧', '123', '内蒙古大学', NULL, '3');

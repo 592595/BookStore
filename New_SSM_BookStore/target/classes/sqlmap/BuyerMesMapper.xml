@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pan.mapper.BuyerMesMapper" >
+  <resultMap id="BaseResultMap" type="com.pan.model.BuyerMes" >
+    <id column="id_buyer" property="idBuyer" jdbcType="VARCHAR" />
+    <result column="name_buyer" property="nameBuyer" jdbcType="VARCHAR" />
+    <result column="pwd_buyer" property="pwdBuyer" jdbcType="VARCHAR" />
+    <result column="address_buyer" property="addressBuyer" jdbcType="VARCHAR" />
+    <result column="call_buyer" property="callBuyer" jdbcType="VARCHAR" />
+    <result column="score_buyer" property="scoreBuyer" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id_buyer, name_buyer, pwd_buyer, address_buyer, call_buyer, score_buyer
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from buyer_mes
+    where id_buyer = #{idBuyer,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from buyer_mes
+    where id_buyer = #{idBuyer,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.pan.model.BuyerMes" >
+    insert into buyer_mes (id_buyer, name_buyer, pwd_buyer, 
+      address_buyer, call_buyer, score_buyer
+      )
+    values (#{idBuyer,jdbcType=VARCHAR}, #{nameBuyer,jdbcType=VARCHAR}, #{pwdBuyer,jdbcType=VARCHAR}, 
+      #{addressBuyer,jdbcType=VARCHAR}, #{callBuyer,jdbcType=VARCHAR}, #{scoreBuyer,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.pan.model.BuyerMes" >
+    insert into buyer_mes
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="idBuyer != null" >
+        id_buyer,
+      </if>
+      <if test="nameBuyer != null" >
+        name_buyer,
+      </if>
+      <if test="pwdBuyer != null" >
+        pwd_buyer,
+      </if>
+      <if test="addressBuyer != null" >
+        address_buyer,
+      </if>
+      <if test="callBuyer != null" >
+        call_buyer,
+      </if>
+      <if test="scoreBuyer != null" >
+        score_buyer,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="idBuyer != null" >
+        #{idBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="nameBuyer != null" >
+        #{nameBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="pwdBuyer != null" >
+        #{pwdBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="addressBuyer != null" >
+        #{addressBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="callBuyer != null" >
+        #{callBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="scoreBuyer != null" >
+        #{scoreBuyer,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.pan.model.BuyerMes" >
+    update buyer_mes
+    <set >
+      <if test="nameBuyer != null" >
+        name_buyer = #{nameBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="pwdBuyer != null" >
+        pwd_buyer = #{pwdBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="addressBuyer != null" >
+        address_buyer = #{addressBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="callBuyer != null" >
+        call_buyer = #{callBuyer,jdbcType=VARCHAR},
+      </if>
+      <if test="scoreBuyer != null" >
+        score_buyer = #{scoreBuyer,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id_buyer = #{idBuyer,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.pan.model.BuyerMes" >
+    update buyer_mes
+    set name_buyer = #{nameBuyer,jdbcType=VARCHAR},
+      pwd_buyer = #{pwdBuyer,jdbcType=VARCHAR},
+      address_buyer = #{addressBuyer,jdbcType=VARCHAR},
+      call_buyer = #{callBuyer,jdbcType=VARCHAR},
+      score_buyer = #{scoreBuyer,jdbcType=INTEGER}
+    where id_buyer = #{idBuyer,jdbcType=VARCHAR}
+  </update>
+  <select id="selectAllBuyers" resultMap="BaseResultMap">
+		select * from buyer_mes
+	</select>
+
+  <select id="selectBuyerByScore" resultMap="BaseResultMap">
+		select * from buyer_mes order by score_buyer desc
+	</select>
+
+</mapper>
